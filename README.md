@@ -40,7 +40,12 @@ $ quarkus build --native
 $ sdk install micronaut
 $ mn create-app --build=gradle --lang=java --java-version=11 micronaut-weather-app
 
-$ 
+$ cd micronaut-weather-app
+$ ./gradlew run -t
+$ ./gradlew build
+
+$ ./gradlew nativeCompile
+$ ./gradlew nativeRun
 ```
 
 ### Helidon

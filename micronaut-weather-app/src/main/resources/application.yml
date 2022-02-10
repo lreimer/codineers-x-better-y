@@ -11,6 +11,11 @@ micronaut:
         enabled: true
         paths: classpath:public
 
+endpoints:
+  all:
+    enabled: true
+    port: 8088
+
 netty:
   default:
     allocator:

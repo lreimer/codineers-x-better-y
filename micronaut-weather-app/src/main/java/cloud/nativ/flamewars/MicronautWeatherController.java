@@ -1,5 +1,6 @@
 package cloud.nativ.flamewars;
 
+import io.micrometer.core.annotation.Timed;
 import io.micronaut.http.HttpResponse;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
@@ -15,6 +16,7 @@ public class MicronautWeatherController {
     MicronautWeatherRepository repository;
 
     @Get(produces = "application/json")
+    @Timed(value = "getWeather")
     public HttpResponse<?> getWeather(@QueryValue("city") @NotBlank String city) {
         return HttpResponse.ok(repository.getWeatherForCity(city));
     }
