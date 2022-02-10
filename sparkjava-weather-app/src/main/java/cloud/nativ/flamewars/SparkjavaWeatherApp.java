@@ -10,7 +10,7 @@ public class SparkjavaWeatherApp {
     public static void main(String[] args) {
         port(8080);
         staticFileLocation("/public");
-        
+
         get("/api/hello", (req, res) -> "Hello " + req.queryParamOrDefault("name", "Sparkjava"));
 
         Gson gson = new Gson();

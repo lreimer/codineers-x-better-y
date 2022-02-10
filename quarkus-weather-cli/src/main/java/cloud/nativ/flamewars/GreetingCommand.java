@@ -4,7 +4,7 @@ import picocli.CommandLine;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Parameters;
 
-@Command(name = "greeting", mixinStandardHelpOptions = true)
+@Command(name = "quarkus-weather", mixinStandardHelpOptions = true)
 public class GreetingCommand implements Runnable {
 
     @Parameters(paramLabel = "<name>", defaultValue = "Quarkus", description = "Your name.")
@@ -12,7 +12,7 @@ public class GreetingCommand implements Runnable {
 
     @Override
     public void run() {
-        System.out.printf("Hello %s, go go commando!\n", name);
+        System.out.printf("Hello %s\n", name);
     }
 
 }

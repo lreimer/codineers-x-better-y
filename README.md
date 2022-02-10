@@ -38,7 +38,13 @@ $ quarkus build --native
 # install the Micronaut CLI
 # seee https://micronaut-projects.github.io/micronaut-starter/latest/guide/#installation
 $ sdk install micronaut
+
+# generate app
 $ mn create-app --build=gradle --lang=java --java-version=11 micronaut-weather-app
+
+# generate CLI
+# see https://speakerdeck.com/lreimer/effizientes-devops-tooling-mit-java-und-graalvm
+$ mn create-cli-app --build=gradle --lang=java --java-version=11 micronaut-weather-cli
 
 $ cd micronaut-weather-app
 $ ./gradlew run -t
