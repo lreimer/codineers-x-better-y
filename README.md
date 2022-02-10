@@ -38,10 +38,10 @@ $ quarkus build --native
 # install the Micronaut CLI
 # seee https://micronaut-projects.github.io/micronaut-starter/latest/guide/#installation
 $ sdk install micronaut
+$ mn create-app --build=gradle --lang=java --java-version=11 micronaut-weather-app
 
 $ 
 ```
-
 
 ### Helidon
 

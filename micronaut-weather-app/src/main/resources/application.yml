@@ -1,0 +1,17 @@
+micronaut:
+  server:
+    port: 8080
+    cors:
+      enabled: true
+  application:
+    name: Micronaut Weather App
+  router:
+    static-resources:
+      html:
+        enabled: true
+        paths: classpath:public
+
+netty:
+  default:
+    allocator:
+      max-order: 3
