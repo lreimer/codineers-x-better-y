@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "io.javalin:javalin:4.3.0"
+
+    runtimeOnly group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.35'
+    runtimeOnly group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.12.6'
+}
+
+application {
+    mainClass = 'cloud.nativ.flamewars.JavalinWeatherApp'
+}

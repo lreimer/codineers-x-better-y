@@ -15,3 +15,8 @@ gradle-app.setting
 
 .dccache
 .vscode/
+.idea/
+
+# Ignore Gradle build output directory
+build
+bin/
