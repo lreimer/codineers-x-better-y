@@ -27,6 +27,9 @@ $ quarkus ext add quarkus-smallrye-health
 $ quarkus ext add quarkus-smallrye-fault-tolerance
 $ quarkus ext add quarkus-resteasy-jsonb
 $ quarkus ext add quarkus-rest-client-jsonb
+
+$ quarkus build
+$ quarkus build --native
 ```
 
 ### Micronaut
@@ -36,6 +39,7 @@ $ quarkus ext add quarkus-rest-client-jsonb
 # seee https://micronaut-projects.github.io/micronaut-starter/latest/guide/#installation
 $ sdk install micronaut
 
+$ 
 ```
 
 
@@ -45,6 +49,12 @@ $ sdk install micronaut
 # install the Helidon CLI
 # see https://github.com/oracle/helidon/blob/master/HELIDON-CLI.md
 
+$ helidon init --project helidon-weather-app --flavor MP --package cloud.nativ.flamewars --groupid cloud.nativ.flamewars --artifactid helidon-weather-app
+$ cd helidon-weather-app
+$ helidon dev
+
+$ mvn package
+$ mvn package -Pnative-image
 ```
 
 ## Maintainer
