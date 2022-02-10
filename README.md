@@ -18,6 +18,15 @@ $ mv code-with-quarkus quarkus-weather-app
 # see https://speakerdeck.com/lreimer/effizientes-devops-tooling-mit-java-und-graalvm
 $ quarkus create cli --gradle --java --wrapper --package-name=cloud.nativ.flamewars
 $ mv code-with-quarkus quarkus-weather-cli
+
+$ cd quarkus-weather-app
+$ quarkus dev
+
+$ quarkus extension list --installable --category cloud
+$ quarkus ext add quarkus-smallrye-health
+$ quarkus ext add quarkus-smallrye-fault-tolerance
+$ quarkus ext add quarkus-resteasy-jsonb
+$ quarkus ext add quarkus-rest-client-jsonb
 ```
 
 ### Micronaut
